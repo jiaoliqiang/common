@@ -1,0 +1,15 @@
+/* pages/invatation/invitation.wxss */
+.message_class{
+  background-color: greenyellow;
+  border-color: black;
+  border-style: solid;
+  border-width: 2rpx;
+  width: 70px;
+  
+}
+.messageview_class{
+  display: flex;
+  flex-direction: row;
+  border-color: black;
+  background-color:black;
+}

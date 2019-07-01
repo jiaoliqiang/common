@@ -1,0 +1,13 @@
+<view>
+  <view>
+    <input class='input_class'></input>
+  </view>
+  <view class='view'>
+    <view class='messageview_class' wx:for="{{modelist}}" >
+      <view class='message_class'>{{item.message}}</view>
+    </view>
+  </view>
+  <view>
+    <button class='button_class'>提交</button>
+  </view>
+</view>
