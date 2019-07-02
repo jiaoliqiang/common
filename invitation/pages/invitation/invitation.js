@@ -5,7 +5,37 @@ Page({
    * 页面的初始数据
    */
   data: {
-    modelist: [{ message: '情感' }, { message: '生活' }, { message: '热爱' }, { message: '工作' }, { message: '嗨' }, { message: '学习' }, { message: '时间' }, { message: '表白' }, { message: '其他'}],
+    modelist: [{ message: '情感', color: '', ischoise: false }, { message: '生活', color: '', ischoise: false }, { message: '热爱', color: '', ischoise: false }, { message: '工作', color: '', ischoise: false }, { message: '嗨', color: '', ischoise: false }, { message: '学习', color: '', ischoise: false }, { message: '表白', color: '', ischoise: false }, { message: '其他', color: '', ischoise: false}],
+    src:'../../picture/sky.jpg',
+
+  },
+
+  choise:function(res){
+    var that = this
+    var modelist = that.data.modelist
+    var index = parseInt(res.currentTarget.dataset.index)
+    var choise = modelist[index]
+    var message = choise.message
+    var backgroudcolor = choise.color
+    var ischoise = choise.ischoise
+    
+    var y = 'modelist[' + index + '].ischoise'
+    var c = 'modelist[' + index + '].color'
+    console.log(y)
+    if (ischoise){
+      
+      console.log('true')
+      that.setData({
+        [y]: false,
+        [c]:''
+      })
+    }else{
+      console.log('false')
+      that.setData({
+        [y]:true,
+        [c]: 'greenyellow'
+      })
+    }
 
   },
 

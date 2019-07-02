@@ -1,13 +1,18 @@
-<view>
+<view style="background:url('../../picture/couples.jpg')">
+  
   <view>
     <input class='input_class'></input>
   </view>
   <view class='view'>
-    <view class='messageview_class' wx:for="{{modelist}}" >
-      <view class='message_class'>{{item.message}}</view>
-    </view>
-  </view>
-  <view>
-    <button class='button_class'>提交</button>
-  </view>
+    <view class='messageview_class' wx:for="{{modelist}}" style="flex-direction:row;" >
+      <view bindtap='choise'  class='message_class' style='background-color: {{item.color}};' data-index='{{index}}'>{{item.message}}</view>
+    
 </view>
+</view>
+   
+      <button class='button_class'>提交</button>
+   
+  </view>
+
+
+
