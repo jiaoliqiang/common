@@ -10,7 +10,7 @@
 </view>
 </view>
    
-      <button class='button_class'>提交</button>
+      <button bindtap='toResult' class='button_class'>提交</button>
    
   </view>
 

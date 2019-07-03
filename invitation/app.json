@@ -2,8 +2,8 @@
   "pages": [
     "pages/invitation/invitation",
     "pages/index/index",
-    "pages/logs/logs"
-   
+    "pages/logs/logs",
+    "pages/result/result"
   ],
   "window": {
     "backgroundTextStyle": "light",

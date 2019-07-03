@@ -1,0 +1,7 @@
+
+<view>
+  <rich-text>
+    我们的结果，永远是未知更有吸引力！！！3
+  </rich-text>
+</view>
+<button bindtap='tonavigateBack'>返回</button>

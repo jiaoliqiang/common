@@ -38,6 +38,20 @@ Page({
     }
 
   },
+  toResult:function(res){
+    // 跳转页面的四种方法，第一种跳转到应用内的某一个页面可以用wx.navigateBack返回第二种：跳转到某一个页面
+    // 使用组件<navigate url:''>点击</navigate>第四种wx.switchTabBaar()
+    wx.navigateTo({
+      url: '../result/result',
+      success:function(){},
+      fail:function(){},
+      complete:function(){},
+    })
+
+    // wx.redirectTo({
+    //   url: '../result/result',
+    // })
+  },
 
   /**
    * 生命周期函数--监听页面加载
